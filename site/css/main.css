@@ -1,0 +1,352 @@
+/* Mobil */
+@media only screen and (min-width : 1px){
+    body{
+        margin: 0;
+        background-color:white;
+    }
+
+    ul{
+        list-style: none;
+    }
+    
+    h3{
+        font-size: 30px;
+        color: white;
+    }
+    
+    p{
+        margin: 0;
+    }
+    
+    h4{
+        margin: 0;
+    }
+    
+    h5{
+        font-size: 25px;
+        color: black;
+    }
+
+    h6{
+        font-size: 15px;
+        margin: 0;
+    }
+    
+    .menu{
+        height: 100vh;
+        width: 80vw;
+        background-color: darkslateblue;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 100;
+    }
+    
+    .menu-button{
+        display: inline;
+        cursor: pointer;
+        color: black;
+    }
+    
+    .menu-button i.material-icons{
+        font-size: 2rem;
+        top: 0px;
+    }
+    
+    .show{
+        left: 0;
+    }
+    
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 2;
+    }
+    
+    .fade-layer.visible{
+        display: block;
+    }
+    
+    .menu ul  {
+        font-size: 25px;
+    }
+    
+    .menu ul li{
+        margin-bottom: 30px;
+    }
+    
+    .menu a{
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    
+    
+    .wrapper{
+        display: grid;
+        grid-template-rows: 150px auto 150px;
+        grid-gap: 25px; 
+        grid-template-areas:
+        "header"
+        "main"
+        "footer" 
+    }
+    .header{
+        grid-area: header;
+        background-image: url("../png/mobilheader.jpg");
+        background-size: cover;
+        border: 5px solid black;
+    }
+    
+    .nyhet1{
+        background-image: url("../png/obamanyhetmobil.jpg");
+    }
+    
+    .premiumbox{
+        background-color: red;
+        height: 45px;
+        width: 165px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    
+    .nyhet2{
+        background-image: url("../png/abelnyhetmobil.jpg");
+    }
+    
+    .nyhet3{
+        background-image: url("../png/davidnyhetmobil.jpg");
+    }
+    
+    .besok{
+        visibility: visible;
+    }
+    
+    
+    
+    main{
+        display: grid;
+        grid-area: main;
+        background-color: white;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 250px 200px 250px;
+        grid-gap: 25px;
+        grid-template-areas: 
+        
+        "nyhet1 nyhet1 nyhet1 nyhet1 nyhet1"
+        "nyhet2 nyhet2 nyhet2 nyhet2 nyhet2 "
+        "annonsmobil annonsmobil annonsmobil annonsmobil annonsmobil "
+        "nyhet3 nyhet3 nyhet3 nyhet3 nyhet3 "
+        "annonsmobil2 annonsmobil2 annonsmobil2 annonsmobil2 annonsmobil2"; 
+    }
+    
+    .footer{
+        grid-area: footer;
+        background-color: lightgray;
+        border: 0.5px solid black;
+    }
+    
+    .textbox{
+        background-color: rgba(0,0,0,0.5)
+    }
+    
+    .textbox h3{
+        margin: 0;
+        color: white;
+    }
+    
+    .nyhet1{
+        grid-area: nyhet1; 
+        background-color: lightgray;
+        
+    } 
+    
+    
+    .nyhet2{
+        grid-area: nyhet2;
+        background-color: lightgray;
+    } 
+    
+    .annonsmobil {
+        grid-area: annonsmobil;
+        background-color: lightyellow;
+        color: blue;
+        border: 0.5px solid black;
+    }
+    .bildertillannons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .annonsmobil2{
+        background-image: url("../png/premiumannonsmobil.jpg");
+        color: blue;
+        border: 1px solid red;
+    }
+    
+    
+    #majstroja{
+        background-image: url("../png/majstrojamobil.jpg");
+    }
+    
+    #markusmossa{
+        background-image: url("../png/markusmossamobil.jpg");
+    }
+    
+    #markustroja{
+        background-image: url("../png/markustrojamobil.jpg"); 
+    }
+    
+    .nyhet3{
+        grid-area: nyhet3;
+        background-color:  lightgray;
+    } 
+    
+    .bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 1px solid black;
+    }
+    
+    .annonsmobil2{
+        grid-area: annonsmobil2; 
+    } 
+    
+    .reklambildmobil{
+        border: 0.5px solid black;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .besok{
+        height: 50px;
+        width: 150px;
+        background-color: red;
+        position: absolute;
+        cursor: pointer;
+        top: 120%
+        
+    }
+    
+    .besok h5{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 6%
+    }
+    
+    /* /* Desktop */
+    @media only screen and (min-width : 650px){
+        
+        h4{
+            font-size: 25px;
+        }
+        
+        .menu-button{
+            display: none;
+        }
+        
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 250px 1320px 200px;
+            grid-gap: 25px; 
+            grid-template-areas:
+            "header header header header header"
+            "main main main main main"
+            "footer footer footer footer footer";
+        }
+        
+        .header{
+            background-image: url("../png/desktopheader.jpg");
+        }
+        
+        main{
+            grid-template-rows: 300px 300px 350px 300px;
+            grid-gap: 25px;
+            grid-template-areas: 
+            ". annonsmobil2 annonsmobil2 annonsmobil2 ." 
+            "nyhet1 nyhet1 nyhet1 nyhet1 nyhet1"
+            "nyhet2 nyhet2 nyhet2 nyhet2 annonsmobil "
+            "nyhet3 nyhet3 nyhet3 nyhet3 annonsmobil ";
+        }
+        
+        
+        .reklambildmobil{
+            height: 200px;
+            width: 200px;
+        }
+        
+        #markustroja{
+            background-image: url("../png/markustrojakundvagn.jpg");
+        }
+        
+        #markusmossa{
+            background-image: url("../png/markusmossakundvagn.jpg");
+        }
+        
+        #majstroja{
+            background-image: url("../png/majstrojakundvagn.jpg");
+        }
+        
+        .nyhet1{
+            background-image: url("../png/obamanyhetdesktop.jpg");
+            
+        }
+        
+        .nyhet2{
+            background-image: url("../png/abelnyhetdesktop.jpg");
+        }
+        
+        .nyhet3{
+            background-image: url("../png/davidnyhetdesktop.jpg");
+        }
+        
+        
+        
+        .bildertillannons{
+            flex-direction: column;
+        }
+        .besok{
+            visibility: hidden;
+        }
+        
+        .bildtillannons2{
+            background-image: url("../png/annonsdator.jpg");
+            background-size: cover;
+        }
+        
+        @keyframes blink { 50% { border-color: #ff0000; }  }
+        
+        .annonsmobil2{
+            background-image: url("../png/premiumannonsdesktop.jpg");
+            border: 6px solid blue;
+            animation: blink .5s step-end infinite alternate; 
+        }
+    }
+    
+}
+
+.premiumbox{
+    height: 80px;
+    width: 300px;
+}
