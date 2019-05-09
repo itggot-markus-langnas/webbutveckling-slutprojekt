@@ -10,65 +10,90 @@
 </head>
 <body>
     
-    <div class="wrapper">
-        <div class="header">
-            <div class="menu-button" onclick="showMenu()">
-                <i class="material-icons">menu</i>
-            </div>  
-            <div class="menu">
-                <ul>
-                    <li><a href="startsida.html">Startsida</a></li>
-                    <li><a href="sport.html">Sport</a></li>
-                    <li><a href="premium.html">Bli Premium</a></li>
-                </ul>
-            </div>
+    <div class="wrapper3">
+            <div class="header">
+                    <div class="menu-button" onclick="showMenu()">
+                        <i class="material-icons">menu</i>
+                    </div>  
+                    <div class="menu">
+                        <ul>
+                            <li><a href="startsida.html">Startsida</a></li>
+                            <li><a href="sport.html">Sport</a></li>
+                            <li><a href="premium.html">Bli Premium</a></li>
+                        </ul>
+                    </div>
+                    
+                    <ul id="desktopmenu">
+                        <li><a href="startsida.html">Startsida</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="premium.html">Premium</a></li>
+                    </ul>
+                    
+                    
+                    
+                    <div class="fade-layer" onclick="showMenu()"></div>              
+                </div>
+                
         
-            <ul id="desktopmenu">
-                <li><a href="#home">Startsida</a></li>
-                <li><a href="#news">Sport</a></li>
-                <li><a href="premium.html">Premium</a></li>
-              </ul>
+        
+        <main3>
 
-
-            
-            <div class="fade-layer" onclick="showMenu()"></div>              
-        </div>
-        
-        
-        <main>            
-            
-            <div class="annonsmobil">
-                <p>Annons</p>
-                <div class="bildertillannons">
-                    <div class="reklambildmobil" id="markustroja"></div>
-                    <div class="reklambildmobil" id="markusmossa"></div>
-                    <div class="reklambildmobil" id="majstroja"></div>
-                    <div class="besok">
-                        <h5>Besök sidan</h5>
+                <div class="email">
+                    <p id="premium">Email:</p>
+                  <input type="text">  
+                </div>
+                <div class="password">
+                    <p id="premium">Lösenord:</p>
+                        <input type="text">
+                </div>
+                <div class="signin">
+                    <div class="button">
+                        <p id="loggain">Logga in</p>
+                    </div>
+                    <div class="button2">
+                        <p id="skapakonto">Skapa Konto</p>
                     </div>
                 </div>
-            </div>
-           
-            <div class="annonsmobil2">
-                <p>Annons</p>
-            </div>
+                
+                
+            </main3>
+
+            <footer class="footer">
             
-        </main>
-        <div class="footer">
+                    <div class="footertextcontainer">
+                        <div class="footertext">
+                            <h6>Kontakt</h6>
+                            <p>Markus Längnäs</p> 
+                            <p>markus@langnas.se</p>
+                            <p>Tel: 0704414251</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="footertextcontainer">
+                        <div class="footertext">
+                            <h6>Sociala medier</h6>
+                            <p>Twitter</p> 
+                            <p>Instagram</p>
+                            <p>Facebook</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="footertextcontainer">
+                        <div class="footertext">   
+                            <h6>Om Markus News</h6>
+                            <p>Cookies</p> 
+                            <p>Regler & Villkor</p>
+                            <p>Integritetspolicy</p>
+                        </div>
+                        
+                    </div>
+                    
+                </footer>
             
-            
-            <div class="footercontent" id="left">
-                <h6>Kontakt</h6>
-                <p>Markus Längnäs</p> 
-                <p>markus@langnas.se</p>
-                <p>Tel: 0704414251</p>
-            </div>
-            
-            <div class="footercontent" id="center">
-                <h6>Tjo</h6>
-            </div>
-            <div class="footercontent" id="right">Tja</div>
         </div>
+      
     </div>
 </div>
 <script src="js/main.js"></script> 

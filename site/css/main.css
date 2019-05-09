@@ -7,6 +7,11 @@
 
     #bold{
         font-weight: bold;
+        margin: 10px;
+    }
+
+    #stycke{
+        margin: 20px;
     }
 
     ul{
@@ -39,6 +44,10 @@
     h6{
         font-size: 15px;
         margin: 0;
+    }
+
+    input{
+        font-size: 25px;
     }
 
     #desktopmenu{
@@ -116,11 +125,23 @@
 
     .wrapper2{
         display: grid;
-        grid-template-rows: 150px 1500px 150px;
+        grid-template-rows: 150px 1400px 150px;
         grid-gap: 25px; 
         grid-template-areas:
         "header"
         "main2"
+        "footer" 
+    }
+
+
+    .wrapper3{
+        background-color: gray;
+        display: grid;
+        grid-template-rows: 150px 501px 150px;
+        grid-gap: 25px;
+        grid-template-areas:
+        "header"
+        "main3"
         "footer" 
     }
     .header{
@@ -134,6 +155,62 @@
         background-image: url("../png/obamanyhetmobil.jpg");
     }
 
+    .button{
+        display: flex;
+        width: 170px;
+        height: 55px;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #loggain{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+    }
+
+    #skapakonto{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 23px;
+    }
+    .button2{
+        display: flex;
+        width: 160px;
+        height: 40px;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .signin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #premium{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: yellow;
+        font-size: 20px;
+    }
+
+    .email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .password{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     
     .premiumbox{
@@ -145,6 +222,8 @@
         justify-content: center;
         align-items: center; 
     }
+
+
     
     
     .nyhet2{
@@ -155,9 +234,7 @@
         background-image: url("../png/davidnyhetmobil.jpg");
     }
     
-    .besok{
-        visibility: visible;
-    }
+ 
     
     
     
@@ -180,11 +257,23 @@
     grid-area: main2;    
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 1200px;
+    grid-template-rows: 300px 1100px;
     grid-gap: 10px;
     grid-template-areas: 
     "bild"
     "text" 
+    }
+
+    main3{
+        display: grid;
+        grid-area: main3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 167px 167px 167px;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "email"
+        "password"
+        "signin"
     }
     
 .abelbildmobil{
@@ -201,6 +290,15 @@
         grid-area: footer;
         background-color: lightgray;
         border: 0.5px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footertextcontainer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
     }
     
     .textbox{
@@ -298,22 +396,8 @@
         background-size: cover;
     }
     
-    .besok{
-        height: 50px;
-        width: 150px;
-        background-color: red;
-        position: absolute;
-        cursor: pointer;
-        top: 120%
-        
-    }
+
     
-    .besok h5{
-        display: flex;
-        justify-content: center;
-        position: relative;
-        margin: 6%
-    }
     
     /* /* Desktop */
     @media only screen and (min-width : 650px){
@@ -430,9 +514,7 @@
         .bildertillannons{
             flex-direction: column;
         }
-        .besok{
-            visibility: hidden;
-        }
+       
         
         .bildtillannons2{
             background-image: url("../png/annonsdator.jpg");
@@ -451,13 +533,20 @@
             width: 300px;
         }
         .wrapper2{
-            grid-template-rows: 250px 1500px 150px; 
+            grid-template-rows: 250px 800px 150px; 
+        }
+
+        .wrapper3{
+            grid-template-rows: 250px 540px 150px; 
+
         }
         
         
         main2{
-            grid-template-rows: 300px 1150px; 
+            grid-template-rows: 300px 500px; 
             }
+
+            
             
             .abelbildmobil{
                 box-sizing: border-box;
@@ -469,23 +558,6 @@
                 background-image: url("../png/nyhetbilddesktop.jpg")
             }
 
-    .footer{
-     display: flex;
-     flex-direction: column;
-    }
-
-
-    #left{
-        align-self: flex-start;
-    }
-
-    #center{
-        align-self: center;
-    }
-
-    #right{
-        align-self: flex-end;
-    }
      
 
     }
