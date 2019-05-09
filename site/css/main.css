@@ -5,8 +5,17 @@
         background-color:white;
     }
 
+    #bold{
+        font-weight: bold;
+    }
+
     ul{
         list-style: none;
+    }
+
+    h2{
+        margin: 0;
+        font-size: 30px;
     }
     
     h3{
@@ -30,6 +39,10 @@
     h6{
         font-size: 15px;
         margin: 0;
+    }
+
+    #desktopmenu{
+        visibility: hidden;
     }
     
     .menu{
@@ -120,6 +133,8 @@
     .nyhet1{
         background-image: url("../png/obamanyhetmobil.jpg");
     }
+
+
     
     .premiumbox{
         background-color: red;
@@ -202,12 +217,24 @@
         background-color: lightgray;
         
     } 
+
+    .sportnyhet1{
+        grid-area: nyhet1; 
+        background-image: url("../png/basketnyhetmobil.jpg");
+        
+    }
     
     
     .nyhet2{
         grid-area: nyhet2;
         background-color: lightgray;
-    } 
+    }
+    
+    
+    .sportnyhet2{
+        grid-area: nyhet2; 
+        background-image: url("../png/andrenyhetmobil.jpg");
+    }
     
     .annonsmobil {
         grid-area: annonsmobil;
@@ -243,8 +270,12 @@
     
     .nyhet3{
         grid-area: nyhet3;
-        background-color:  lightgray;
     } 
+
+    .sportnyhet3{
+        grid-area: nyhet3;
+        background-image: url("../png/idanyhetmobil.jpg");
+        } 
     
     .bg{
         display: flex;
@@ -286,10 +317,39 @@
     
     /* /* Desktop */
     @media only screen and (min-width : 650px){
+        #desktopmenu{
+            visibility: visible;
+            list-style-type: none;
+            margin: auto;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+
+
+            
+          }
+          
+          #desktopmenu li {
+            float: left;
+          }
+          
+          #desktopmenu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
         
         h4{
             font-size: 25px;
         }
+        
+    h2{
+        margin: 0;
+        font-size: 30px;
+    }
         
         .menu-button{
             display: none;
@@ -342,14 +402,28 @@
             background-image: url("../png/obamanyhetdesktop.jpg");
             
         }
+
+        .sportnyhet1{
+            background-image: url("../png/basketnyhetdesktop.jpg");
+        }
         
         .nyhet2{
             background-image: url("../png/abelnyhetdesktop.jpg");
+        }
+
+        .sportnyhet2{
+            background-image: url("../png/andrenyhetdesktop.jpg");
         }
         
         .nyhet3{
             background-image: url("../png/davidnyhetdesktop.jpg");
         }
+
+        .sportnyhet3{
+            background-image: url("../png/idanyhetdesktop.jpg");
+        }
+
+    
         
         
         
@@ -382,7 +456,7 @@
         
         
         main2{
-            grid-template-rows: 350px 1150px; 
+            grid-template-rows: 300px 1150px; 
             }
             
             .abelbildmobil{
@@ -394,7 +468,26 @@
                 background-repeat: no-repeat;
                 background-image: url("../png/nyhetbilddesktop.jpg")
             }
-        
+
+    .footer{
+     display: flex;
+     flex-direction: column;
+    }
+
+
+    #left{
+        align-self: flex-start;
+    }
+
+    #center{
+        align-self: center;
+    }
+
+    #right{
+        align-self: flex-end;
+    }
+     
+
     }
     
 
